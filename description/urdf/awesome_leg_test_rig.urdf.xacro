@@ -62,7 +62,7 @@
 
     <xacro:if value="$(arg sliding_guide)">
 
-        <joint name="test_rig2base" type="prismatic">
+        <joint name="test_rig2base" type="fixed">
             <parent link="test_rig" />
             <child link="base_link" />
             <origin xyz="${test_rig_base_ext + hip_mounting_offset} 0 ${pelvis_mounting_height}" rpy="0.0 0.0 ${-PI_2}"/>
